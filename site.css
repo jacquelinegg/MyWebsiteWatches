@@ -1,0 +1,702 @@
+body{
+    width: 100%;
+    margin: 0em; 
+    background-color: #070302;
+    overflow-x: hidden;
+}
+.document {
+    width: 100%;
+    margin: 0em; 
+    
+}
+.containerheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 200px;
+    width: 100%;
+    margin-left:0;
+    position: relative; 
+    
+    background-image: url("blur_edges (2).png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    filter: blur(0.1px);  
+-webkit-backdrop-filter: blur(0.1px); 
+backdrop-filter: blur(0.1px); 
+   
+
+}
+
+.slogan {
+    position: absolute;
+    color: rgba(147, 127, 115, 255);
+    z-index: 3;
+    top: 6.7em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    font-style: italic;
+    
+    
+}
+
+.element {
+    opacity: 0.6;
+    background-image: url("05-Internal-Banner1050X466-2.jpg");
+    background-size: 178%;
+    background-repeat: none;
+    background-position: 80% 80%;
+    border-bottom-left-radius: 3em;
+    border-top-right-radius: 3em;
+    position: relative;
+    width: 50%;
+    
+}
+
+.element1 {
+    opacity: 0.6;
+    border-bottom-right-radius: 3em;
+    border-top-left-radius: 3em;  
+    width: 45%;
+    height: 88%;
+    background-image: url("download.jpg");
+    background-size: 100%;
+    background-repeat: none;
+    background-position: 80% 29%;
+    position: relative;
+    border: 0.2em ridge #56473d;
+}
+.element1:hover {
+    opacity: 1;
+}
+
+.element1:hover::after {
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    content: "The Grandmaster Chime"; 
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+    font-size: 1em;
+    padding: 0.5em;
+    background-color: #56473d;
+    border-radius: 4px;
+}
+
+
+
+.element:hover {
+    opacity: 1;
+}
+
+.element:hover::after {
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    content: "The Collection"; 
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: antiquewhite;
+    font-size: 1em;
+    padding: 0.5em;
+    background-color: #56473d;
+    border-radius: 4px;
+}
+
+.animationh1 {
+    top: 2em;
+    text-align: right;
+    padding-right: 1.5em;
+    background: linear-gradient(120deg,  rgb(249, 231, 220) 0%, rgb(169, 159, 141) 100%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    transition: font-size 0.3s ease;
+    color: #efc6ad;
+}
+
+
+
+
+h1 {
+    background: linear-gradient(180deg, rgba(149, 117, 99, 1) 0%, rgba(231, 221, 202, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 3;
+    position: absolute;
+    top: 0.33em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 4em;
+    letter-spacing: -1px;
+    
+}
+
+
+
+.footer-overlay { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 6%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(145,128,114, 0.3) 100%);
+    pointer-events: none; 
+    z-index: -1; 
+    border-bottom: 0.3em ridge #957563;
+    
+}
+
+.header-overlay { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(145,128,114, 0.3) 100%);
+    pointer-events: none; 
+    z-index: 1; 
+    border-bottom: 0.3em ridge #957563;
+   
+}
+.header-line { 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:60%;
+    margin-left: 17em;
+    height: 0.07em;
+    background-color: #bba086; 
+    z-index: 2; 
+    border-style: none;
+    top: 8.4em;
+}
+
+.navcontainer {
+    margin-bottom: 1em; 
+}
+
+.navbar {
+
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    padding: auto;
+
+   
+    
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 10px;
+    border-bottom: 0.1em ridge #957563;
+
+}
+
+.navbar a {
+    display: block;
+    color:#d5b29e;
+    
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color:  #efc6ad;
+    text-decoration: wavy overline #efc6ad;
+    border-radius: 5px;
+}
+
+.navbar a.active {
+   
+    border-radius: 5px;
+}
+.sectioncontainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.3em; 
+}
+
+
+
+.section1 {
+    width: 70%;
+    border: 1px solid black;
+    height: 30em;
+}
+
+.obshtidve
+{
+    display: flex;
+    flex-direction: row;
+    height: 9.35em;
+    border: 1px solid black;
+    margin: 0.8em;
+}
+
+.element
+{
+    width: 15em;
+    height: 80%;
+    border: 1px solid black;
+    margin: 0.8em;
+
+}
+
+.section1
+{
+    background-image: url("01-Internal-Banner1050X466-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    
+}
+
+
+
+.sectioncontainer{
+    margin-top: 0.9em;
+}
+
+.section1-overlay { 
+    position: absolute;
+    top: 20;
+    left: 0;
+    width: 70%;
+    height: 30em;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(145,128,114, 0.3) 100%);
+    pointer-events: none; 
+    z-index: 1; 
+    border-top: 0.2em ridge #957563;
+    border-bottom-left-radius: 43em;
+    border-bottom-right-radius: 9em;
+    mix-blend-mode: hard-light;
+    
+}
+
+.obshtidve
+{
+   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(145,128,114, 0.3) 100%); color: antiquewhite;
+   height: 45.4%; 
+   border-bottom-right-radius: 100em;
+   border-bottom-left-radius: 10em;
+   font-size: 1.2em;
+}
+
+.obshtidvenew
+{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(145,128,114, 0.3) 100%); color: antiquewhite;
+   height: 45.4%; 
+   border-bottom-right-radius: 100em;
+   border-bottom-left-radius: 10em;
+   font-size: 1.2em;
+   width: 90%;
+   margin-left: 0.6em;
+}
+
+.contact-info {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.4em;
+  }
+  
+  .contact-info li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info i {
+    margin-right: 5px;
+  }
+
+  @media only screen and (min-width: 1528px) and (max-width: 1667px) {
+  
+    .animation
+    {
+        font-size: 90%;
+    }
+    .sectioncontainer{
+        height: 80%;
+    }
+    .section1-overlay{
+        height: 50%;
+    }
+    .section1 {
+        width: 70%;
+        border: 1px solid black;
+        height: 30em;
+    }
+
+   
+    
+}
+
+@media only screen and (min-width: 1360px) and (max-width: 1523px) {
+  
+    .animation
+    {
+        font-size: 90%;
+    }
+    .sectioncontainer{
+        height: 75%;
+    }
+    .section1-overlay{
+        height: 46.3%;
+    }
+    .section1 {
+        width: 70%;
+        border: 1px solid black;
+        height: 28em;
+    }
+    .contact-info
+    {
+        font-size: 1.2em;
+    }
+    .background
+    {
+        width: 40em;
+        height: 5em;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.588) 0%, rgba(145, 128, 114, 0.149) 100%); color: antiquewhite;
+        border-radius: 3em;
+        mix-blend-mode:darken;
+    }
+    
+    
+   
+    
+}
+
+@media only screen and (min-width: 1160px) and (max-width: 1360px){
+    
+    .section1{
+        width: 100%;
+    }
+    .section1-overlay{
+        width: 100%;
+    }
+
+    .obshtidvenew{
+        width: 320%;
+    }
+    
+      .obshtidve{
+        height: 100%;
+        width: 130%;  
+        margin-left:100%;   
+        
+      }
+      .sectioncontainer {
+        flex-direction: column;
+    }
+    .section1new {
+        flex-direction: column;
+        
+    }
+      .element
+      {
+        height: 15em;
+        background-size: 200% 100%;
+       
+       
+      }
+      .element1{
+        margin-top: 0.9em;
+        height: 15em;
+        background-size: 120% 100%;
+       
+       
+      }
+      .section1new{
+    
+        width: 80%;
+    }
+
+    .contact-info
+    {
+        font-size: 1.2em;
+        margin-top: -2em;
+        padding-bottom: 0.6em;
+    }
+    
+    .background
+    {
+        width: 40em;
+        height: 5em;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.588) 0%, rgba(145, 128, 114, 0.149) 100%); color: antiquewhite;
+        border-radius: 3em;
+        mix-blend-mode:darken;
+    }
+      
+    
+  }
+
+  @media only screen and (min-width: 1080px) and (max-width: 1160px){
+    
+    .section1{
+        height: 30em;
+        width: 100%;
+    }
+    .section1-overlay{
+        width: 100%;  
+        height: 30em;
+    }
+
+    .header-line
+    {
+        width: 50%;
+    }
+
+    .obshtidvenew{
+        width: 320%;
+        padding-right: 11em;
+    }
+
+    .slogan
+    {
+        margin-top: 1.9em;
+        font-size:1.2em
+    }
+
+    .contact-info
+    {
+        font-size: 1.2em;
+        margin-top: -2em;
+        padding-bottom: 0.6em;
+    }
+    
+      .obshtidve{
+        height: 100%;
+        width: 140%;  
+        margin-left:95%;   
+        
+        
+      }
+      .sectioncontainer {
+        flex-direction: column;
+    }
+    .section1new {
+        flex-direction: column;
+        
+    }
+      .element
+      {
+        height: 13em;
+        background-size: 200% 100%;
+       
+       
+      }
+      .element1{
+        margin-top: 0.9em;
+        height: 13em;
+        background-size: 120% 100%;
+       
+       
+      }
+      .section1new{
+    
+        width: 80%;
+    }
+
+    .background
+    {
+        width: 40em;
+        height: 5em;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.588) 0%, rgba(145, 128, 114, 0.149) 100%); color: antiquewhite;
+        border-radius: 3em;
+        mix-blend-mode:darken;
+    }
+
+      
+    
+  }
+
+  @media only screen and (min-width: 930px) and (max-width: 1080px){
+    
+    .section1{
+        height: 28.2em;
+        width: 100%;
+    }
+    .section1-overlay{
+        width: 100%;  
+        height: 28em;
+        
+    }
+
+    .header-line
+    {
+        width: 50%;
+    }
+
+    .obshtidvenew{
+        width: 320%;
+        padding-right: 18em;
+    }
+
+    .slogan
+    {
+        margin-top: 2.7em;
+        font-size:1.1em
+    }
+
+    .contact-info
+    {
+        font-size: 1.2em;
+        margin-top: -2em;
+        padding-bottom: 0.6em;
+        text-shadow: 4px 6px 4px #27201c;
+    }
+    
+      .obshtidve{
+        height: 100%;
+        width: 140%;  
+        margin-left:95%;   
+        
+        
+      }
+      .sectioncontainer {
+        flex-direction: column;
+    }
+    .section1new {
+        flex-direction: column;
+        
+    }
+      .element
+      {
+        height: 10em;
+        background-size: 200% 100%;
+       
+       
+      }
+      .element1{
+        margin-top: 0.9em;
+        height: 10em;
+        background-size: 120% 100%;
+       
+       
+      }
+      .section1new{
+    
+        width: 80%;
+    }
+
+    .background
+    {
+        width: 40em;
+        height: 5em;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.588) 0%, rgba(145, 128, 114, 0.149) 100%); color: antiquewhite;
+        border-radius: 3em;
+        mix-blend-mode:darken;
+    }
+
+      
+    
+  }
+
+  @media only screen and (max-width: 930px){
+    
+    .section1{
+        height: 28.2em;
+        width: 100%;
+    }
+    .section1-overlay{
+        width: 100%;  
+        height: 28em;
+        
+    }
+
+    .header-line
+    {
+        width: 40%;
+        margin-right:5em;
+    }
+
+    .obshtidvenew{
+        width: 320%;
+        padding-right: 18em;
+    }
+
+    .slogan
+    {
+        margin-top: 3.6em;
+        font-size:1em
+    }
+
+    .contact-info
+    {
+        font-size: 1.2em;
+        margin-top: -2em;
+        padding-bottom: 0.6em;
+        text-shadow: 4px 6px 4px #27201c;
+    }
+    
+      .obshtidve{
+        height: 100%;
+        width: 140%;  
+        margin-left:95%;   
+        
+        
+      }
+      .sectioncontainer {
+        flex-direction: column;
+    }
+    .section1new {
+        flex-direction: column;
+        
+    }
+      .element
+      {
+        height: 10em;
+        background-size: 200% 100%;
+       
+       
+      }
+      .element1{
+        margin-top: 0.9em;
+        height: 10em;
+        background-size: 120% 100%;
+        width: 15em;
+       
+       
+      }
+      .section1new{
+    
+        width: 80%;
+    }
+
+    .background
+    {
+        width: 40em;
+        height: 5em;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.588) 0%, rgba(145, 128, 114, 0.149) 100%); color: antiquewhite;
+        border-radius: 3em;
+        mix-blend-mode:darken;
+    }
+
+      
+    
+  }
